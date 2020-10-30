@@ -9,9 +9,30 @@
     <script src='iceCreamForm.js'></script>
 </head>
 <body>
-    
+<h1 id="heading">Choose your favourite flavour!</h1>
+
+<form action="">
+
+    <fieldset>
+        <label>Flavour</label><br>
+
+        <input type="radio" id="Strawberry" value="Strawberry" name="flavour">
+        <label for="Strawberry">Strawberry</label><br>
+
+        <input type="radio" id="Chocolate" value="Chocolate" name="flavour" onchange="changeCone()">
+        <label for="Chocolate">Chocolate</label><br>
+
+        <input type="radio" id="Vanilla" value="Vanilla" name="flavour">
+        <label for="Vanilla">Vanilla</label><br>    
+    </fieldset> 
+
+    <fieldset>
+        <input type="text" name="username" id="user" placeholder="Please type your name...">
+    </fieldset>
 
 
-    
+</form>
+
+<button id="button" onclick="changeCone()">button</button>
 </body>
 </html>
