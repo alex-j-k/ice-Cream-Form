@@ -6,20 +6,19 @@
     <title>Ice cream</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='iceCreamForm.css'>
-    <script src='iceCreamForm.js'></script>
 </head>
 <body>
 <h1 id="heading">Choose your favourite flavour!</h1>
 
-<form action="">
+<form id="form" name="form" action="">
 
-    <fieldset>
+    <fieldset onchange="changeCone()">
         <label>Flavour</label><br>
 
         <input type="radio" id="Strawberry" value="Strawberry" name="flavour">
         <label for="Strawberry">Strawberry</label><br>
 
-        <input type="radio" id="Chocolate" value="Chocolate" name="flavour" onchange="changeCone()">
+        <input type="radio" id="Chocolate" value="Chocolate" name="flavour" >
         <label for="Chocolate">Chocolate</label><br>
 
         <input type="radio" id="Vanilla" value="Vanilla" name="flavour">
@@ -30,9 +29,18 @@
         <input type="text" name="username" id="user" placeholder="Please type your name...">
     </fieldset>
 
+    <button id="submitt" type="submit">Submit</button>
 
 </form>
 
-<button id="button" onclick="changeCone()">button</button>
+<div>
+    <label for="list">LIST OF FLAVOURS AND NAMES</label><br>
+    <ul id="list">
+
+    </ul>
+
+</div>
+<script src='iceCreamForm.js'></script>
+
 </body>
 </html>

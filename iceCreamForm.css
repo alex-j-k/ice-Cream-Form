@@ -15,12 +15,15 @@ h1{
 }
 
 form{
-    padding-left: 40%;
-    align-items: center;
+    justify-content: center;
     width: 20%;
     text-align: left;
+    padding-left: 40%;
 }
 
 fieldset{
     border: none;
 }
+
+#button {
+width: 200px;}
